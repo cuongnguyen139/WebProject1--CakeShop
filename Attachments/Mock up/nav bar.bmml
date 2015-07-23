@@ -1,0 +1,25 @@
+<mockup version="1.0" skin="sketch" fontFace="Balsamiq Sans" measuredW="1086" measuredH="664" mockupW="282" mockupH="573">
+  <controls>
+    <control controlID="0" controlTypeID="com.balsamiq.mockups::iPhone" x="804" y="91" w="-1" h="-1" measuredW="282" measuredH="573" zOrder="0" locked="false" isInGroup="-1">
+      <controlProperties>
+        <model>IPhone5</model>
+      </controlProperties>
+    </control>
+    <control controlID="1" controlTypeID="com.balsamiq.mockups::VerticalTabBar" x="836" y="239" w="219" h="342" measuredW="200" measuredH="212" zOrder="1" locked="false" isInGroup="-1">
+      <controlProperties>
+        <text>Home%0AAbout%20Us%0ACatalogue%0AOrder%20Online%0AContact%20Us</text>
+      </controlProperties>
+    </control>
+    <control controlID="2" controlTypeID="com.balsamiq.mockups::Canvas" x="918" y="200" w="137" h="27" measuredW="100" measuredH="70" zOrder="2" locked="false" isInGroup="-1"/>
+    <control controlID="3" controlTypeID="com.balsamiq.mockups::Button" x="1016" y="200" w="39" h="27" measuredW="51" measuredH="27" zOrder="3" locked="false" isInGroup="-1">
+      <controlProperties>
+        <text>Back</text>
+      </controlProperties>
+    </control>
+    <control controlID="4" controlTypeID="com.balsamiq.mockups::Label" x="933" y="203" w="76" h="-1" measuredW="72" measuredH="21" zOrder="4" locked="false" isInGroup="-1">
+      <controlProperties>
+        <text>Oulu%20Bakery</text>
+      </controlProperties>
+    </control>
+  </controls>
+</mockup>

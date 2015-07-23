@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Cake shop</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <link rel="stylesheet" href="assets/jquery-mobile/jquery.mobile.structure-1.3.1.css" />
+  <link rel="stylesheet" href="css/font-awesome.css" />
+  <link rel="stylesheet" href="assets/flex-slider/flexslider.css" type="text/css">
+  <link rel="stylesheet" href="css/form.css" />
+
+  <script src="http://code.jquery.com/jquery-1.7.1.min.js"></script>
+  <script src="http://code.jquery.com/mobile/1.3.0/jquery.mobile-1.3.0.min.js"></script>
+  <script src="assets/flex-slider/jquery.flexslider-min.js"></script>
+  <script src="js/main.js"></script>
+  <script>
+      // check comments field length
+      $("#main").live("pageinit", function(event) {
+        $("#commentform").submit(function() {
+          var len = $("#comments").val().length;
+          if ( len < 10 || len > 100 ) {
+            $("#errmsg").text("Invalid comments. Length must be between 10-100 chars").show().fadeOut(5000);
+            return false;
+          }
+          else 
+            return true;
+        });
+      });
+  </script>
+</head>
+<body >
+  <div id="main" data-role="page" data-theme="a">
+    <!-- Side Navigation Panel -->
+    <div data-role="panel" id="sideNav" data-position="left">
+      <ul id="sideButtons">
+        <li>
+          <a href="#"><i class="icon-facebook"></i></a>
+        </li>
+        <li>
+          <a href="#"><i class="icon-twitter"></i></a>
+        </li>
+        <li>
+          <a href="#"><i class="icon-linkedin"></i></a>
+        </li>
+          <li>
+          <a href="#"><i class="icon-google-plus"></i></a>
+        </li>
+      </ul>
+      <ul id="sidePanel" class="clleft">
+        <li><a href="index.html"><i class="icon-home"></i> Home</a></li>
+        <li><a href="about.html"><i class="icon-lightbulb"></i> About Us</a></li>
+		<li><a href="products.html" rel="external"><i class="icon-shopping-cart"></i> Catalogue</a></li>
+        <li id="active"><a href="products.php" rel="external"><i class="icon-star"></i> Order online</a></li>
+        <li><a href="blog.html"><i class="icon-font"></i> Blog</a></li>
+        <li><a href="contact.html"><i class="icon-envelope"></i> Contact Us</a></li>
+      </ul>
+    </div>
+    <!-- End Side Navigation -->
+    <!-- Header -->
+    <div data-role="header" data-position="fixed" data-theme="a">
+      <h1>Oulu Bakery</h1>
+      <a href="#sideNav" id="navIcon"><i class="icon-th-list"></i></a>
+	  <a href="#" data-icon="back" data-rel="back" class="roundbtn">Back</a>
+    </div>
+    <!-- End Header -->
+    <!-- Content Start -->
+	<div id="content" data-role="content">
+	<form id="commentform" action="checkout.php" method="post" data-transition="pop">
+          <div data-role="fieldcontain">
+            <label for="username">Name</label>
+            <input id="username" name="username" type="text" required placeholder="Enter Name" />
+          </div>
+          <div data-role="fieldcontain">
+            <label for="email">Email ID</label>
+            <input id="email" name="email" type="email" required placeholder="Enter Email" />
+          </div>
+		  <div data-role="fieldcontain">
+            <label for="address">Address</label>
+            <input id="address" name="address" type="text" required placeholder="Enter address" />
+          </div>
+		  <div data-role="fieldcontain">
+            <label for="cakename">Cake's name</label>
+            <input id="cakename" name="cakename" type="text" required placeholder="Enter Cake's name" />
+          </div>
+		  <div data-role="fieldcontain">
+            <label for="quantity">Quantity</label>
+            <input id="quantity" name="quantity" type="text" required placeholder="Enter Quantity" />
+          </div>
+		  <div data-role="fieldcontain">
+			<label for="method">Shipping method</label>
+			<select name="method" id="method" data-native-menu="false" required>
+			        <option value="">Select</option>
+					<option value="standard">Standard: 7 day</option>
+					<option value="rush">Rush: 3 days</option>
+					<option value="express">Express: next day</option>
+					<option value="overnight">Overnight</option>
+			</select>
+		  </div>
+		  <fieldset data-role="fieldcontain">
+			<label for="day">Payment method</label>
+			<select name="day" id="day" data-native-menu="false" required class="required">
+			        <option value="">Select</option>
+					<option value="mon">Paypal</option>
+                    <option value="tue">Visa electron</option>
+                    <option value="wed">Mastercard</option>
+			</select>
+		  </fieldset>
+		  <div data-role="fieldcontain">
+            <label for="number">Card number</label>
+            <input id="number" name="qnumber" type="text" required placeholder="Enter Card number" />
+          </div>
+          <div data-role="fieldcontain">
+            <label for="comments">Comments</label>
+            <textarea id="comments" name="comments" required placeholder="Enter Comments <10-100 chars long>"></textarea>
+          </div>
+          <div id="errmsg" style="color: #f00"></div> 
+		  <div data-role="controlgroup" data-type="horizontal" data-theme="b">
+            <input type="submit" data-inline="true" id="submitid" value="Submit">
+            <input type="reset"  data-inline="true" id="reset" value="Reset">
+          </div>
+	</form>
+  </div>
+</div>	
+</body>
+</html>

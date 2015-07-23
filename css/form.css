@@ -1,0 +1,252 @@
+@charset "utf-8";
+@import url(http://fonts.googleapis.com/css?family=Noto+Sans:400,700);
+/*Overwrite jMobile Css*/
+.ui-shadow {
+    -moz-box-shadow: none;
+    -webkit-box-shadow: none;
+    box-shadow: none;
+}
+.ui-btn-corner-all {
+    -webkit-border-radius: 0;
+    border-radius: 0;
+}
+.ui-listview-filter{
+    background-image: none;
+}
+
+.ui-btn-up-a {
+    border: 1px solid       #111 ;
+    background:             #333 ;
+    font-weight: bold;
+    color:                  #fff;
+    text-shadow: none;
+    background-image: none;
+}
+.ui-btn-hover-a {
+    border: 1px solid       #000 /*{a-bhover-border}*/;
+    background:             #444 /*{a-bhover-background-color}*/;
+    font-weight: bold;
+    color:                  #fff /*{a-bhover-color}*/;
+    text-shadow: none;
+    background-image: none;
+}
+.ui-btn-hover-a:visited,
+.ui-btn-hover-a:hover,
+.ui-btn-hover-a a.ui-link-inherit {
+    color:                  #fff /*{a-bhover-color}*/;
+}
+.ui-btn-down-a {
+    border: 1px solid       #000 /*{a-bdown-border}*/;
+    background:             #222 /*{a-bdown-background-color}*/;
+    font-weight: bold;
+    color:                  #fff /*{a-bdown-color}*/;
+    text-shadow: none;
+    background-image: none;
+}
+.ui-btn-down-a {
+    border: 1px solid       #000 /*{a-bdown-border}*/;
+    background:             #222 /*{a-bdown-background-color}*/;
+    font-weight: bold;
+    color:                  #fff /*{a-bdown-color}*/;
+    text-shadow: none;
+    background-image: none;}
+    body {
+        font: 12px/1.2 'Helvetica Neue',Helvetica,Arial,sans-serif;
+        color:#555;
+        height:100%;
+        text-shadow:none;
+
+    }
+
+
+/*
+Header
+*/
+.ui-header .ui-title{
+    color: #fff;
+    text-shadow:none;
+}
+#navIcon{
+    color: #f1f1f1;
+    text-shadow:none;
+    border: none;
+    background: none;
+
+
+}
+#navIcon span.ui-btn-inner{
+    font-size: 18px;
+    border-top: none;
+}
+
+
+/*
+    Side Panel
+    */
+    #sideButtons{
+        text-shadow:none;
+        padding: 0;
+        float: left;
+        margin: 0;
+        list-style: none;
+    }
+    #sideButtons li{
+      float: left;
+  }
+  #sideButtons li a{
+    border-right: 1px solid #34495e;
+    border-bottom: 1px solid #34495e;
+    background: #2c3e50;
+    text-decoration: none;
+    display: block;
+    padding: 12px 12px 12px 13px;
+    font-size: 20px;
+    color: #bdc3c7;
+}
+
+
+#sideNav{
+    background: #232323;
+}
+#sidePanel{
+    margin: 0;padding: 0;
+    list-style: none;
+}
+#sidePanel li{
+    padding: 10px 8px;
+    border-bottom: #2e2e2e 1px solid;
+}
+#sidePanel li a{
+    font-size: 96%;
+    letter-spacing: 2px;
+    font-family: 'Noto Sans', sans-serif;
+    font-weight: bold;
+    color: #848484;
+    text-decoration: none;
+    text-shadow:none;
+}
+#sidePanel li a i{
+
+    margin-right: 6px;
+}
+#sideNav .ui-panel-inner{
+    position: fixed;
+    padding: 0px;
+}
+#sidePanel li#active{
+  background-color: #222;
+  border-left: 4px solid #E76C67;
+}
+#sidePanel li#active a, #sidePanel li#active a i{
+    color: #fff;
+}
+.ui-header{
+    border: 1px solid #db4f4a;
+    background: #000000;
+    color: #fff;
+    font-weight: bold;
+    text-shadow: 0 -1px 0 #000;
+}
+
+
+
+/**
+ * Misc
+ */
+ .element-center{
+    margin-left:auto;
+    margin-right: auto;
+}
+.text-center{
+    text-align: center;
+}
+.right{
+    float: right;
+}
+.left{
+    float: left;
+}
+.clleft{
+    clear: left;
+}
+.clright{
+    clear: right;
+}
+.mar15{
+    margin-left: 15px;
+    margin-right: 15px;
+}
+
+/* Tables */
+	
+		table
+		{
+			width: 100%;
+		}
+		
+			table.default
+			{
+				width: 100%;
+				border-collapse: collapse;
+			}
+
+				table.default tbody
+				{
+				}
+
+				table.default tbody tr
+				{
+					border: solid 1px #e6e6e6;
+				}
+			
+				table.default tbody tr:nth-child(2n+2)
+				{
+					background: #f8f8f8;
+				}
+				
+				table.default td
+				{
+					padding: 0.5em 1em 0.5em 1em;
+				}
+				
+				table.default th
+				{
+					text-align: left;
+					padding: 0.5em 1em 1em 1em;
+				}
+			
+				table.default thead
+				{
+				}
+
+				table.default tfoot
+				{
+				}
+				
+					table.default tfoot td
+					{
+						padding-top: 1em;
+					}
+				
+				table.default tbody
+				{
+				}
+
+			.dark table.default
+			{
+			}
+
+				.dark table.default tbody
+				{
+				}
+			
+					.dark table.default tbody tr
+					{
+						border-color: rgba(255,255,255,0.5);
+					}
+				
+					.dark table.default tbody tr:nth-child(2n+2)
+					{
+						background: rgba(255,255,255,0.1);
+					}
+

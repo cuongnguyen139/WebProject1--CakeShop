@@ -1,0 +1,130 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<cake>
+  <type name="Bread">
+    <bread name="Muffin">
+      <src>images/muffin.jpg</src>
+      <description>Perfect, slightly crunchy</description>
+      <price>3 euros</price>
+    </bread>
+    <bread name="Pastries">
+      <src>images/pastries.jpg</src>
+      <description>A deliciously crisp</description>
+      <price>4 euros</price>
+    </bread>
+    <bread name="Biscuits">
+      <src>images/biscuits.jpg</src>
+      <description>A semi-sweet biscuit</description>
+      <price>1 euros</price>
+    </bread>
+    <bread name="Rolls">
+      <src>images/roll.jpg</src>
+      <description>A really impressive dessert</description>
+      <price>5 euros</price>
+    </bread>
+    <bread name="Buns">
+      <src>images/bun.jpg</src>
+      <description>Tender and delicate</description>
+      <price>2 euros</price>
+    </bread>
+  </type>
+  <type name="Mousse">
+    <bread name="Chocolate mousse">
+      <src>images/chocolate-mousse.jpg</src>
+      <description>Rich, smooth and sublime</description>
+      <price>3 euros</price>
+    </bread>
+    <bread name="Lemon mousse">
+      <src>images/lemon-mousse.jpg</src>
+      <description>Thick and creamy</description>
+      <price>2 euros</price>
+    </bread>
+    <bread name="Pumpkin mousse">
+      <src>images/pumpkin-mousse.jpg</src>
+      <description>Enjoy the creaminess!</description>
+      <price>4 euros</price>
+    </bread>
+  </type>
+  <type name="Cakes">
+    <bread name="Cupcakes">
+      <src>images/cupcakes.jpg</src>
+      <description>A tried-and-true recipe</description>
+      <price>2 euros</price>
+    </bread>
+    <bread name="Cheesecake">
+      <src>images/cheesecake.jpg</src>
+      <description>Absolutely to die for!!!</description>
+      <price>4 euros</price>
+    </bread>
+    <bread name="Tortes">
+      <src>images/tortes.jpg</src>
+      <description>The layers are so elegant</description>
+      <price>5 euros</price>
+    </bread>
+    <bread name="Sponge cake">
+      <src>images/sponge-cake.jpg</src>
+      <description>With orange marmalade</description>
+      <price>3 euros</price>
+    </bread>
+  </type>
+  <type name="Cookies">
+    <bread name="Brownies">
+      <src>images/brownies.jpg</src>
+      <description>Slightly chewy cake</description>
+      <price>3 euros</price>
+    </bread>
+    <bread name="Oatmeal cake">
+      <src>images/oatmeal.jpg</src>
+      <description>It's like cozy sweats</description>
+      <price>5 euros</price>
+    </bread>
+    <bread name="Butter cookies">
+      <src>images/butter-cookies.jpg</src>
+      <description>Yummy. These are good!</description>
+      <price>2 euros</price>
+    </bread>
+  </type>
+  <type name="Cobbler">
+    <bread name="Blackberry cobbler">
+      <src>images/black-cobbler.jpg</src>
+      <description> The most-loved desserts</description>
+      <price>3 euros</price>
+    </bread>
+    <bread name="Peach cobbler">
+      <src>images/peach-cobbler.jpg</src>
+      <description>Very delicious!</description>
+      <price>4 euros</price>
+    </bread>
+    <bread name="Cherry cobbler">
+      <src>images/cherry-cobbler.jpg</src>
+      <description>Combination with the cherry</description>
+      <price>5 euros</price>
+    </bread>
+  </type>
+  <type name="Pies">
+    <bread name="Tarts">
+      <src>images/tarts.jpg</src>
+      <description>Good with jams</description>
+      <price>5 euros</price>
+    </bread>
+    <bread name="Crusts">
+      <src>images/crusts.jpg</src>
+      <description>Soft and almost cake-like</description>
+      <price>4 euros</price>
+    </bread>
+    <bread name="Vintage Pies">
+      <src>images/vintage-pie.jpg</src>
+      <description>Full of sentiment and stories</description>
+      <price>3 euros</price>
+    </bread>
+    <bread name="Nut pies">
+      <src>images/nut-pie.jpg</src>
+      <description>Incredibly sweet!</description>
+      <price>4 euros</price>
+    </bread>
+    <bread name="Fruit pies">
+      <src>images/fruit-pie.jpg</src>
+      <description>Very healthy with fruit</description>
+      <price>5 euros</price>
+    </bread>
+  </type>
+</cake>
